@@ -1,8 +1,8 @@
 package Attendance;
 
-public class Admin {
+public class Teachers {
 
-	public void adminView() {
+	public void teachersView() {
 		// TODO Auto-generated method stub
 		
 	}

@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception, SQLException {
 		Home hmm = new Home();
-		hmm.homeView(4);
+		hmm.homeView(2);
 
 	}
 

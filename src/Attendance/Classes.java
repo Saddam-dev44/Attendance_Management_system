@@ -1,8 +1,10 @@
 package Attendance;
 
-public class Admin {
+public class Classes {
 
-	public void adminView() {
+	
+
+	public void classesView() {
 		// TODO Auto-generated method stub
 		
 	}
