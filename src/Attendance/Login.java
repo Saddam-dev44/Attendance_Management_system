@@ -25,7 +25,8 @@ public class Login {
 	 public void loginView() {
 	JFrame frame = new JFrame();
 	Font text = new Font("Times NewROMAN", Font.PLAIN, 20);
-	//home view
+	Home hm = new Home();
+	
 	//techereView
 	//studentview
 	
@@ -150,8 +151,7 @@ public class Login {
 					}
 					else {
 						if(res==1)
-	//				hm.homeView(usr);
-							System.out.println("output excuted completly");
+							hm.homeView(usr);		
 						else if(res==2)
 		//				tview.tcView(usr);
 							System.out.println("outpu1 excuted completly");	
