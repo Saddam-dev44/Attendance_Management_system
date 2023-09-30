@@ -147,12 +147,7 @@ public class Home {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Teachers teacher = new Teachers();
-				try {
-					teacher.teachersView(id);
-				} catch (SQLException | ClassNotFoundException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+				teacher.teachersView();
 			
 		}
 				});

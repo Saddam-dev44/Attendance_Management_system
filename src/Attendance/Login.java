@@ -11,13 +11,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 public class Login {
 	
@@ -26,8 +25,8 @@ public class Login {
 	JFrame frame = new JFrame();
 	Font text = new Font("Times NewROMAN", Font.PLAIN, 20);
 	Home hm = new Home();
-	Teachers tview = new Teachers();
-	
+	TeachersView tView = new TeachersView();
+	StudentView sview = new StudentView();
 	//techereView
 	//studentview
 	
@@ -122,7 +121,7 @@ public class Login {
 		JLabel warning =new JLabel();
 		warning.setBounds(625,450,250,20);
 		warning.setForeground(Color.RED);
-		warning.setHorizontalAlignment(warning.CENTER);
+		warning.setHorizontalAlignment(SwingConstants.CENTER);
 		frame.add(warning);
 	//--------------------------------------------------
 		
@@ -157,10 +156,10 @@ public class Login {
 					
 					
 						else if(res==2)
-							tview.teachersView(usr);
+							tView.tcView(usr);
 						//.out.println("outpu1 excuted completly");	
 							else if(res==3)
-			//				sview.stView(usr);
+							sview.stView(usr);
 								System.out.println("outpu1 excuted completly23");
 						frame.dispose();
 					}
