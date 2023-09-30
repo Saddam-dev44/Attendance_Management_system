@@ -26,6 +26,7 @@ public class Login {
 	JFrame frame = new JFrame();
 	Font text = new Font("Times NewROMAN", Font.PLAIN, 20);
 	Home hm = new Home();
+	Teachers tview = new Teachers();
 	
 	//techereView
 	//studentview
@@ -151,10 +152,13 @@ public class Login {
 					}
 					else {
 						if(res==1)
-							hm.homeView(usr);		
+						//	System.out.println("working");
+							hm.homeView(usr);
+					
+					
 						else if(res==2)
-		//				tview.tcView(usr);
-							System.out.println("outpu1 excuted completly");	
+							tview.teachersView(usr);
+						//.out.println("outpu1 excuted completly");	
 							else if(res==3)
 			//				sview.stView(usr);
 								System.out.println("outpu1 excuted completly23");
