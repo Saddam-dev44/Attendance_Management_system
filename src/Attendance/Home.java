@@ -163,7 +163,12 @@ public class Home {
 		admin.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				adm.adminView();
+				try {
+					adm.adminView();
+				} catch (NumberFormatException | SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 			});
 		
